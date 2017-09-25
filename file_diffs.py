@@ -355,7 +355,7 @@ class FileDiffFileCommand(FileDiffCommand):
         # Cannot access these settings!!  WHY!?
         # folder_exclude_patterns = self.view.get_setting('folder_exclude_patterns')
         # file_exclude_patterns = self.view.get_setting('file_exclude_patterns')
-        folder_exclude_patterns = [".svn", ".git", ".hg", "CVS"]
+        folder_exclude_patterns = [".svn", ".git", ".hg", "CVS","vendor"]
         file_exclude_patterns = ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj", "*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db"]
         max_files = self.get_setting('limit', 1000)
 
